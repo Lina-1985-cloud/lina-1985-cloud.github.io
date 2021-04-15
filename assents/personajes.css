@@ -34,12 +34,12 @@ h2{
     width: 100%;
     text-align: center;
     color: rgb(98, 98, 98);
-    font-size: 2em;
+    font-size: 2.5em;
     
 }
 h2 span{
     display: inline-block;
-    animation: animate 2s linear forwards;
+    animation: animate 1s linear forwards;
     opacity: 0;
     /* border-bottom: solid 1px  gray; */
 }
@@ -162,7 +162,7 @@ article hr{
     margin-right: 5%;
 }
 .Hogwarts{
-    font-size: 1rem;
+    font-size: 2.5rem;
     font-weight: 300;
     font-family: 'harry_p';
     position: relative;
@@ -364,6 +364,10 @@ width: 80px;
         font-size: 18px;
         text-align: justify;
     }
+    figure h5{
+        margin-left: 20%;
+        font-family: 'cj_potter_handwriting';
+    }
     h5{
         color: white;
         text-align: center;
@@ -424,6 +428,7 @@ width: 80px;
         width: 100px;
         border-radius: 10%;
         padding: 10px;
+        font-family: 'cj_potter_handwriting';
     }
 
 }
