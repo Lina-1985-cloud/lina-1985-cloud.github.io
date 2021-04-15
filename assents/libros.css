@@ -1,0 +1,279 @@
+@import url(estilos.css);
+body {
+
+    text-align: center;
+    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    background-color: hsl(210,50%,20%);
+	background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
+	}
+section{
+     height: 25vh;       
+ }
+.titulo img{
+     width: 350px;
+     animation: nube 10s infinite;
+ }
+ @keyframes nube{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(30px);
+
+    }
+ }
+
+ h2{
+     position: relative;
+     transform: translateY(-40%);
+     width: 100%;
+     text-align: center;
+     color: rgb(98, 98, 98);
+     font-size: 2em;
+    
+ }
+ h2 span{
+     display: inline-block;
+     animation: animate 2s linear forwards;
+     opacity: 0;
+     border-bottom: solid 1px  gray;
+ }
+ article p{
+     color: white;
+     padding: 20px;
+     font-size: 12px;
+     margin-top: 60px;
+     text-align: justify;
+     line-height: 25px;
+ }
+ 
+article img{
+    width: 200px;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+
+}
+h2 span:nth-child(1){
+    animation-delay: 1s;
+}
+h2 span:nth-child(2){
+    animation-delay: 1.5s;
+}
+h2 span:nth-child(3){
+    animation-delay: 2s;
+}
+h2 span:nth-child(4){
+    animation-delay: 2.5s;
+}
+h2 span:nth-child(5){
+    animation-delay: 3s;
+}
+h2 span:nth-child(6){
+    animation-delay: 3.5s;
+}
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.main img{
+    margin-bottom: 40px;
+    filter: grayscale(1)
+}
+.main img:hover{
+    filter: grayscale(0)
+}
+footer{
+    height: 200px;
+    margin-top: 2500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-image: url(/assents/img/draco.png);
+    background-size: cover;
+    background-position: cover;
+    
+}
+footer img{
+    width: 40px;
+}
+.nube{
+    width: 60px;
+    animation: nube2 8s infinite ease;
+}
+@keyframes nube2{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(50px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}
+.txt {
+    color: hsla(0,0%,0%,0);
+    text-shadow: #fff 0 0 60px;
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    font-size: 20px;
+      }
+      @-moz-document url-prefix() { .txt { text-shadow: rgb(255, 255, 255) 0 0 20px; } } /* FF fix */
+  
+  #box:hover .txt {
+          text-shadow: white 0 0 5px;
+          transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+  }
+  
+  
+  /* ♥ ------------------------------------------------------ */
+  
+  .♥ {
+    margin: 0 5px;
+    color: hsla(0,0%,0%,0);
+    text-shadow: red 0 0 5px;
+    transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+      }
+  
+  #box:hover .♥ {
+          text-shadow: red 0 0 100px;
+          transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+  }
+    @-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+
+    .copy{
+        background: grey;
+        padding: 15px;
+        text-align: center;
+    }
+
+@media all and (min-width:700px) {
+  body{
+      overflow:scroll;
+  }
+  article img{
+    width: 300px;
+    padding: 30px;
+}
+footer{
+    height: 450px;
+    width: 100vw;
+    margin-top: 1800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-image: url(/assents/img/draco.png);
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
+    
+}
+footer img{
+    width: 100px;
+}
+.nube{
+    width: 300px;
+    animation: nube2 8s infinite ease;
+}
+.txt {
+    font-size: 30px;
+      }
+      .♥ {
+        font-size: 50px;
+          }
+}
+@media all and (min-width: 1024px){
+    body{
+        width: 100vw;
+        height:100vh;
+    }
+    .titulo img{
+        width: 550px;
+    }
+
+    h2{
+        position: relative;
+        transform: translateY(-40%);
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 4em;
+       
+    }
+    
+    article p{
+        color: white;
+        padding: 50px;
+        margin-top: 80px;
+        font-size: 16px;
+    }
+    
+   article img{
+       width: 400px;
+       padding: 40px;
+   }
+   footer{
+    height: 450px;
+    width: 100vw;
+    margin-top: 1800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-image: url(/assents/img/draco.png);
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
+    
+}
+footer img{
+    width: 100px;
+}
+.nube{
+    width: 300px;
+    animation: nube2 8s infinite ease;
+}
+@keyframes nube2{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-150px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+.txt {
+    font-size: 40px;
+      }
+      .♥ {
+        font-size: 50px;
+          }
+}

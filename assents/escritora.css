@@ -1,0 +1,428 @@
+@import url(estilos.css);
+body{
+    overflow: scroll;
+    width: 100vw;
+    text-align: center;
+    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    background-color: hsl(210,50%,20%);
+    background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
+}
+.card {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 280px;
+    height: 500px;
+    background: #262626;
+    overflow: hidden;
+}
+.card .imgBx,
+.card .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .imgBx {
+    top: 0;
+    left: 0;
+}
+.card:hover .imgBx {
+    top: 0;
+    left: -100%;
+}
+.card .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .details {
+    background: #262626;
+    top: 0;
+    left: 100%;
+    padding: 10px 30px;
+}
+.card:hover .details {
+    top: 0;
+    left: 0%;
+}
+.card .details h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+
+}
+.card .details p {
+    margin: 20px 0 0;
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: justify;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 250px;
+    background-image: url(/assents/img/lechuza.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding: 20px;
+    color: white;
+
+}
+footer img{
+    width: 50px;
+    background: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: 20%;
+    margin-left: -110px;
+    height: 30px;
+    top: 35%;
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+  
+  section p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    color: blanchedalmond;
+  }
+  
+  .word {
+    position: absolute;
+    width: 90px;
+    opacity: 0;
+  }
+  
+  .letter {
+    display: inline-block;
+    position: relative;
+    /* float: left; */
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .wisteria {
+    color: #8e44ad;
+  }
+  
+  .belize {
+    color: #2980b9;
+  }
+  
+  .pomegranate {
+    color: #c0392b;
+  }
+  
+  .green {
+    color: #16a085;
+  }
+  
+  .midnight {
+    color: yellowgreen;
+  }
+  .copy{
+      background: grey;
+      padding: 15px;
+      text-align: center;
+  }
+  .txt[contenteditable] {
+    outline: none;
+  }
+  
+  /* Box ------------------------------------------------------ */
+  
+  #box {
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  
+  /* txt ------------------------------------------------------ */
+  
+  .txt {
+    color: hsla(0,0%,0%,0);
+    text-shadow: #fff 0 0 60px;
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+      }
+      @-moz-document url-prefix() { .txt { text-shadow: #fff 0 0 20px; } } /* FF fix */
+  
+  #box:hover .txt {
+          text-shadow: #fff 0 0 5px;
+          transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+  }
+  
+  
+  /* ♥ ------------------------------------------------------ */
+  
+  .♥ {
+    margin: 0 10px;
+    color: hsla(0,0%,0%,0);
+    text-shadow: red 0 0 5px;
+    transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+      }
+  
+  #box:hover .♥ {
+          text-shadow: red 0 0 100px;
+          transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+  }
+    @-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+
+    
+
+  @media all and (min-width: 768px) {
+    .card {
+        width: 70vw;
+        height: 400px;
+        left: 50%;
+       
+    }
+    .card .imgBx img {
+      width: 600px;
+      object-fit: cover;
+  }
+    .card .details h2 {
+        font-size: 30px;
+        padding: 30px 20px;
+    }
+    .card .details p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .text {
+        width: 380px;
+        left: 30%;
+        text-align: center;
+        height: 200px;
+        top: 50%;
+        margin-top: -20px;
+        font-size: 30px;
+      }
+  
+      
+      .word {
+        width: 215px;
+        margin-left: -4px;
+      }
+
+      .copy{
+          background: grey;
+          padding: 15px;
+          text-align: center;
+      }
+      footer{
+        background-image: url(/assents/img/harry-potter.jpg);
+        background-repeat: no-repeat;
+        background-position:unset;
+        background-size: cover;
+        height: 800px;
+    
+    }
+    footer img{
+        width: 100px;
+        background: black;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    
+    body {
+
+        text-align: center;
+        font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+        background-color: hsl(210,50%,20%);
+        background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
+        }
+    
+    .txt[contenteditable] {
+      outline: none;
+    }
+    
+    /* Box ------------------------------------------------------ */
+    
+    #box {
+      padding: 20px;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    
+    
+    /* txt ------------------------------------------------------ */
+    
+    .txt {
+      color: hsla(0,0%,0%,0);
+      text-shadow: #fff 0 0 60px;
+      transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+        }
+        @-moz-document url-prefix() { .txt { text-shadow: #fff 0 0 20px; } } /* FF fix */
+    
+    #box:hover .txt {
+            text-shadow: #fff 0 0 5px;
+            transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+    }
+    
+    
+    /* ♥ ------------------------------------------------------ */
+    
+    .♥ {
+      margin: 0 10px;
+      color: hsla(0,0%,0%,0);
+      text-shadow: red 0 0 5px;
+      transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+        }
+    
+    #box:hover .♥ {
+            text-shadow: red 0 0 100px;
+            transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+    }
+      @-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+      }
+      
+  @media all and (min-width: 1024px) {
+  
+    .card {
+        width: 50vw;
+        height: 80vh;
+        left: 50%;
+       
+    }
+    .card .imgBx img {
+      width: 800px;
+      object-fit: cover;
+  }
+
+    .card .details h2 {
+        font-size: 30px;
+        padding: 40px 30px;
+        margin-top: 20px;
+    }
+    .card .details p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .text {
+        width: 450px;
+        left: 35%;
+        text-align: center;
+        height: 200px;
+        top: 50%;
+        margin-top: -20px;
+        font-size: 40px;
+      }
+  
+      
+      .word {
+        width: 235px;
+        margin-left: -2px;
+      }
+
+      .copy{
+          background: grey;
+          padding: 15px;
+          text-align: center;
+      }
+      footer{
+        background-image: url(/assents/img/harry-potter.jpg);
+        background-repeat: no-repeat;
+        background-position:unset;
+        background-size: cover;
+        height: 800px;
+        justify-content: space-between;
+        padding: 50px;
+    
+    }
+    footer img{
+        width: 100px;
+        background: black;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    footer p{
+        font-size: 40px;
+    }
+ 
+
+    body {
+
+    text-align: center;
+    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    background-color: hsl(210,50%,20%);
+	  background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
+	}
+
+.txt[contenteditable] {
+  outline: none;
+}
+
+/* Box ------------------------------------------------------ */
+
+#box {
+  padding: 50px;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+
+/* txt ------------------------------------------------------ */
+
+.txt {
+  color: hsla(0,0%,0%,0);
+  text-shadow: #fff 0 0 60px;
+  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+	}
+	@-moz-document url-prefix() { .txt { text-shadow: #fff 0 0 20px; } } /* FF fix */
+
+#box:hover .txt {
+		text-shadow: #fff 0 0 5px;
+		transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+
+/* ♥ ------------------------------------------------------ */
+
+.♥ {
+  margin: 0 10px;
+  color: hsla(0,0%,0%,0);
+  text-shadow: red 0 0 5px;
+  transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+	}
+
+#box:hover .♥ {
+		text-shadow: red 0 0 100px;
+		transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+}
+  @-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+  }
+  
