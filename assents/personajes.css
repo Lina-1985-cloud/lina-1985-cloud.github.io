@@ -222,13 +222,72 @@ footer .salo{
 border-radius: 10px;
 width: 80px;
 }
-.copy{
+.wrapper{
+    padding: 20px;
+    background:#333
+  }
+  .wrapper .button{
     background: #222;
-    color: white;
-    padding: 15px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+    -3px -3px 7px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    width: 200px;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
     text-align: center;
-}
+    background: white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #333;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #1da172;
+  }
+  .wrapper .button .icon{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    color: white;
+  }
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: 15px;
+  }
 
+  .wrapper .button:nth-child(1):hover span{
+    color: rgb(98, 97, 97);
+  }
+  .wrapper .button:nth-child(2):hover span{
+    color: #1da172;
+  }
+ 
+  .copy{
+      color: white;
+      background: #222;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+  }
 @media all and (min-width: 768px){
     .container-slider{
         height:650px;
