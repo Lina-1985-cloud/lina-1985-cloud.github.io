@@ -1,2 +1,7 @@
 # lina-1985-cloud.github.io
-Es una página inspirada en Harry potter, que realicé especialmente para mi hija que es potterhead!!
+###Harry Potter
+
+<img src="/assents/img/logo.png" alt="Logo">
+ - Trabajo realizado como reto del curso en [Plataforma39A](http://https://www.instagram.com/plataforma39a/ "Plataforma39A") 🚀 
+ - Trabajo inspirado en el personaje favorito de mi hija.
+ - Realicé este reto con HTML, CSS y un poco de Js.
