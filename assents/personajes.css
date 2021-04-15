@@ -9,7 +9,7 @@ section{
 }
 
 .titulo img{
-    width: 350px;
+    width: 300px;
     animation: nube 10s infinite;
 }
 @keyframes nube{
