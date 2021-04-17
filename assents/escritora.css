@@ -7,6 +7,9 @@ body{
     background-color: hsl(210,50%,20%);
     background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
 }
+figure img{
+  position: relative;
+}
 .card {
     position: relative;
     top: 60%;
