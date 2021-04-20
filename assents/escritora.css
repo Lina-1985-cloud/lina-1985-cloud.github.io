@@ -16,7 +16,7 @@ figure img{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 280px;
-    height: 500px;
+    height: 600px;
     background: #262626;
     overflow: hidden;
 }
@@ -389,7 +389,7 @@ footer img{
   
     .card {
         width: 50vw;
-        height: 80vh;
+        height: 90vh;
         left: 50%;
        
     }
