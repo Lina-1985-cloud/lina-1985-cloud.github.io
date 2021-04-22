@@ -12,7 +12,7 @@ figure img{
 }
 .card {
     position: relative;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 280px;
@@ -54,7 +54,7 @@ figure img{
 .card .details h2 {
     color: #fff;
     text-align: center;
-    margin: 0;
+    margin-top: 10px;
     padding: 0 0 10px;
     border-bottom: 2px solid #fff;
     font-size: 16px;
